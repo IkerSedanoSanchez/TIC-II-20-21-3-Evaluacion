@@ -6,7 +6,7 @@ public class Cuadrado {
 	public Cuadrado(Punto vertice, double lado) {
 		this.vertice=vertice;
 		this.lado=lado;
-		
+	
 	}
 	/**
 	 * @return the vertice
@@ -32,5 +32,7 @@ public class Cuadrado {
 	public void setLado(double lado) {
 		this.lado = lado;
 	}
-	
+	public double getArea() {
+		return(lado*lado);
+	}
 }
