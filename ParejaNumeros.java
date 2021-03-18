@@ -2,32 +2,57 @@ package MiCodigo;
 
 public class ParejaNumeros {
 	//Aqui van los atributos
-	int num1;
-	int num2;
+	double num1;
+	double num2;
 	
 	//El constructor
-	public ParejaNumeros(int Nuevonum1, int Nuevonum2){
-		num1=Nuevonum1;
-		num2=Nuevonum2;
+	public ParejaNumeros(double num1, double num2){
+		this.num1=num1;
+		this.num2=num2;
+	}
+	//Metodos getters and setters
+	/**
+	 * @return the num1
+	 */
+	public double getNum1() {
+		return num1;
+	}
+	/**
+	 * @param num1 the num1 to set
+	 */
+	public void setNum1(double num1) {
+		this.num1 = num1;
+	}
+	/**
+	 * @return the num2
+	 */
+	public double getNum2() {
+		return num2;
+	}
+	/**
+	 * @param num2 the num2 to set
+	 */
+	public void setNum2(double num2) {
+		this.num2 = num2;
 	}
 	//Resto de metodos
-	public int devuelveSuma(){
-		int suma;
+	public double devuelveSuma(){
+		double suma;
 		suma=num1+num2;
-		return (suma);
-		
+		return (suma);	
 	}
-	public int devuelveResta(){
+	public double devuelveResta(){
 		return (num1-num2);
 		
 	}
-	public int devuelveMultiplicacion() {
+	public double devuelveMultiplicacion() {
 		return (num1*num2);
 	}
-	public float devuelveDivision() {
-		float division;
+	public double devuelveDivision() {
+		double division;
 		division=num1/num2;
 		return(division);
 	}
+	
 
 }

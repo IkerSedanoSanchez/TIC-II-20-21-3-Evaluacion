@@ -48,13 +48,13 @@ public class Fecha {
 	}
 	public String getFechaConFormatoLargo() {
 		String fechaConFormato;
-		fechaConFormato="Zaragoza a"+ dia +"de"+ mes +"de" +anio;
+		fechaConFormato="Zaragoza a " + dia + " de " + mes + " de " + anio;
 		return(fechaConFormato);
 	}
 	
 	public String getFechaConFormatoCorto() {
 		String fechaConFormatoCorto;
-		fechaConFormatoCorto=dia+ "/"+ mes +"/" + anio;
+		fechaConFormatoCorto=dia + " / " + mes + " / " + anio;
 		return(fechaConFormatoCorto);
 	}
 }
